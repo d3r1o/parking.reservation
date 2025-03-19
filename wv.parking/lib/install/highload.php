@@ -45,7 +45,7 @@ class HighLoad
                         'DEFAULT_VALUE' => '',
                     ],
                 ],
-                'UF_LIST_ID' => [
+                'UF_CITY' => [
                     'type' => 'hlblock',
                     'settings' => [
                         'HLBLOCK_ID' => $cityHlId,
