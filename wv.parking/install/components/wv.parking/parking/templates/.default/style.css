@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.container.widget {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.parking-calendar-container {
+    margin-right: 30px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-container th,
+.table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f4f4f4;
+}
+
+.table-container td {
+    cursor: pointer;
+}
+
+.table-container .booked {
+    background-color: #ccffcd;
+}
+
+/* Фиксированная ширина для колонки с временем */
+.table-container th:first-child,
+.table-container td:first-child {
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+/* Равномерное распределение ширины для остальных колонок */
+.table-container th:not(:first-child),
+.table-container td:not(:first-child) {
+    width: calc((100% - 80px) / 3);
+}
+
+/* Стили для фиксированных элементов */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    background-color: #f4f4f4;
+    z-index: 10;
+    display: none; /* Скрываем по умолчанию */
+}
+
+/* Обеспечиваем одинаковую ширину для фиксированных и оригинальных элементов */
+.fixed-header th {
+    width: auto; /* Ширина будет задана через JS */
+}

@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+.container {
+    padding: 5px 15px 20px;
+}
+
+#clientField {
+    width: 75%;
+}
+
+.ui-ctl {
+    margin-top: 5px;
+}
